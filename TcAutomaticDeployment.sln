@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcAutomation", "..\..\..\..\Desktop\TcAutomation\TcAutomation\TcAutomation.csproj", "{3771A0D3-D436-4E02-9CD3-AF073A79BD6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcAutomaticDeployment", "TcAutomation\TcAutomaticDeployment.csproj", "{3771A0D3-D436-4E02-9CD3-AF073A79BD6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
