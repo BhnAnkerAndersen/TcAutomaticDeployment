@@ -16,7 +16,7 @@ namespace TcAutomaticDeployment
             //Placeholder for TwinCat source file path.
             string TcSourceFilePath = "";
 
-            //Placeholder for AMS route ID.
+            //Placeholder for AMS route address.
             string amsNetId = "";
 
             //Shutdown help menu at startup.
@@ -53,7 +53,7 @@ namespace TcAutomaticDeployment
                 Environment.Exit(1);
             }
 
-            //If no AMS route adress has been provided, the AMS route will be set to local.
+            //If no AMS route address has been provided, the AMS route will be set to local.
             if (string.IsNullOrEmpty(amsNetId))
             {
                 Console.WriteLine("No AmsNetId provided, assuming local AmsNetId");
@@ -78,10 +78,10 @@ namespace TcAutomaticDeployment
 
             ITcSysManager15 sysMan = (ITcSysManager15) pro.Object;
 
-            //Sets the AMS route adress
+            //Sets the AMS route address
             sysMan.SetTargetNetId(amsNetId);
 
-            //Activates the configuration of the TwinCat solution on the AMS route adress.
+            //Activates the configuration of the TwinCat solution on the AMS route address.
             sysMan.ActivateConfiguration();
 
             //Reboots the TwinCat PLC
